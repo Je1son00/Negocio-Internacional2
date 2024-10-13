@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0e9e9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    color: rgb(20, 1, 1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.imagenes img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    margin: 10px;
+    color: rgb(1, 1, 20);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el Swiper */
+.swiper {
+    max-width: 90%;
+    overflow: visible;
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+/* Imagen circular y del mismo tamaño */
+.swiper-slide img {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0px 3px 17px rgb(0 0 0 / 25%);
+}
+
+/* Títulos de las imágenes */
+.swiper-slide div {
+    margin-top: 10px;
+}
+
+.swiper-slide h3 {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .swiper-slide img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .swiper-slide img {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .container h2 {
+        font-size: 16px;
+    }
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+.contact-details a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de la calculadora */
+.Calculadora, .calculadora-inversion {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.Calculadora h2, .calculadora-inversion h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.Calculadora form, .calculadora-inversion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Calculadora label, .calculadora-inversion label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Calculadora input, .calculadora-inversion input, .calculadora-inversion select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.Calculadora input[type="submit"], .calculadora-inversion input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.Calculadora input[type="submit"]:hover, .calculadora-inversion input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.Calculadora p, .calculadora-inversion p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.resultado-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resultado {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px; 
+}
